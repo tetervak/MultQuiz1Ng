@@ -1,0 +1,5 @@
+<ng-container [ngSwitch]="grade">
+  <app-right-answer *ngSwitchCase="'rightAnswer'"></app-right-answer>
+  <app-wrong-answer *ngSwitchCase="'wrongAnswer'"></app-wrong-answer>
+  <app-input-error *ngSwitchDefault></app-input-error>
+</ng-container>

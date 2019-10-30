@@ -1,23 +1,35 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
+import {routing} from './app.routing';
 
 import {AppComponent} from './app.component';
-import {AppInputAnswerComponent} from './app.input-answer.component';
-import {AppFooterComponent} from './app.footer.component';
-import {AppRightAnswerComponent} from './app.right-answer.component';
-import {AppMultiplicationQuizService} from './app.multiplication-quiz.service';
-import {AppWrongAnswerComponent} from './app.wrong-answer.component';
-import {AppInputErrorComponent} from './app.input-error.component';
+import {FooterComponent} from './footer.component';
+import {RightAnswerComponent} from './right-answer.component';
+import {MultiplicationQuizService} from './multiplication-quiz.service';
+import {WrongAnswerComponent} from './wrong-answer.component';
+import {InputErrorComponent} from './input-error.component';
+import {NewProblemComponent} from './new-problem.component';
+import {SeeAnswerComponent} from './see-answer.component';
+import {CheckAnswerComponent} from './check-answer.component';
+import {TryAgainComponent} from './try-again.component';
 
 @NgModule({
   declarations: [
-    AppComponent, AppFooterComponent,
-    AppInputAnswerComponent, AppRightAnswerComponent, AppWrongAnswerComponent, AppInputErrorComponent
+    AppComponent,
+    FooterComponent,
+    NewProblemComponent,
+    SeeAnswerComponent,
+    CheckAnswerComponent,
+    RightAnswerComponent,
+    WrongAnswerComponent,
+    TryAgainComponent,
+    InputErrorComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    routing
   ],
-  providers: [AppMultiplicationQuizService],
+  providers: [MultiplicationQuizService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -12,53 +12,6 @@ h1 {
   bottom: 0.5em;
 }
 
-h2 {
-  color: green;
-  margin-bottom: .5em;
-}
-
-label {
-  font-weight: bold;
-}
-
-input[type="text"]{
-  width: 3em;
-  vertical-align: baseline;
-  border-radius: 6px;
-  border: thin solid gray;
-  padding-left: 5px;
-  font-size: 100% ;
-}
-
-input[type="submit"]{
-  margin-left: 1em;
-}
-
-br {
-  clear: both;
-}
-
-fieldset {
-  margin-top: 1em;
-  padding-top: 1em;
-  border-radius: 0.5em;
-  border-color: steelblue;
-}
-
-legend {
-  color:steelblue;
-  font-weight: bold;
-}
-
-span[data-link]{
-  color: limegreen;
-  font-weight: bolder;
-}
-
-span[data-link]:hover{
-  text-decoration: underline;
-}
-
 div.box {
   width: 350px;
   border: 6px double silver;
@@ -70,21 +23,8 @@ div.box {
   padding-bottom: 1em;
 }
 
-div.tab{
-  margin-left: 2em;
-}
-
-span.problem_text{
-  color:  blueviolet;
-}
-
 p.right, span.right{
   color:green;
-  font-weight:bolder
-}
-
-p.wrong, span.wrong, p.error{
-  color:red;
   font-weight:bolder
 }
 

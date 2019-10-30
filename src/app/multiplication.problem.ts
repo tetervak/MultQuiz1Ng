@@ -1,4 +1,4 @@
-export class AppMultiplicationProblem {
+export class MultiplicationProblem {
   public a: number;
   public b: number;
   public answer: number;

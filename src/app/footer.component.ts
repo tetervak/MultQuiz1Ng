@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-footer',
-  templateUrl: './app.footer.component.html',
-  styleUrls: ['./app.footer.component.css']
+  templateUrl: './footer.component.html',
+  styleUrls: ['./footer.component.css']
 })
-export class AppFooterComponent {
+export class FooterComponent {
   date: string;
   constructor() {
     const date = new Date();
