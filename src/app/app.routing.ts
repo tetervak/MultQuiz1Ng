@@ -1,8 +1,8 @@
 import {Routes, RouterModule} from '@angular/router';
-import {NewProblemComponent} from './new-problem.component';
-import {SeeAnswerComponent} from './see-answer.component';
-import {CheckAnswerComponent} from './check-answer.component';
-import {TryAgainComponent} from './try-again.component';
+import {NewProblemComponent} from './new-problem/new-problem.component';
+import {SeeAnswerComponent} from './see-answer/see-answer.component';
+import {CheckAnswerComponent} from './check-answer/check-answer.component';
+import {TryAgainComponent} from './try-again/try-again.component';
 
 const appRouts: Routes = [
   {path: 'new_problem', component: NewProblemComponent},

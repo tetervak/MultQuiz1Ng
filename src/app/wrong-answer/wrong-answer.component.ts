@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import {MultiplicationQuizService} from './multiplication-quiz.service';
-import {MultiplicationProblem} from './multiplication.problem';
+import {MultiplicationQuizService} from '../multiplication-quiz.service';
+import {MultiplicationProblem} from '../multiplication.problem';
 
 @Component({
   selector: 'app-wrong-answer',
   templateUrl: './wrong-answer.component.html',
-  styleUrls: ['./wrong-answer.component.css', '../assets/css/main.css']
+  styleUrls: ['./wrong-answer.component.css', '../../assets/css/main.css']
 })
 export class WrongAnswerComponent {
   public problem: MultiplicationProblem;

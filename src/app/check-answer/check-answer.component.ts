@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {MultiplicationQuizService} from './multiplication-quiz.service';
+import {MultiplicationQuizService} from '../multiplication-quiz.service';
 
 @Component({
   selector: 'app-check-answer',

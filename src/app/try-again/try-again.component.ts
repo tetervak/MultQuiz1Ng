@@ -1,22 +1,21 @@
 import { Component } from '@angular/core';
 import {Router} from '@angular/router';
-import {MultiplicationProblem} from './multiplication.problem';
-import {MultiplicationQuizService} from './multiplication-quiz.service';
+import {MultiplicationProblem} from '../multiplication.problem';
+import {MultiplicationQuizService} from '../multiplication-quiz.service';
 import {log} from 'util';
 
 @Component({
-  selector: 'app-new-problem',
-  templateUrl: './new-problem.component.html',
-  styleUrls: ['./new-problem.component.css', '../assets/css/main.css']
+  selector: 'app-try-again',
+  templateUrl: './try-again.component.html',
+  styleUrls: ['./try-again.component.css', '../../assets/css/main.css']
 })
-export class NewProblemComponent {
+export class TryAgainComponent {
   public quiz: MultiplicationQuizService;
   public problem: MultiplicationProblem;
   private router: Router;
   constructor(quiz: MultiplicationQuizService, router: Router) {
     this.quiz = quiz;
     this.problem = quiz.problem;
-    this.problem.reset();
     this.router = router;
   }
   public check(userAnswer: string) {
